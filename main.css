@@ -49,3 +49,7 @@ canvas {
     object-fit: contain;
     margin-bottom: 1rem;
 }
+
+.body img {
+    max-width: 100%;
+}
