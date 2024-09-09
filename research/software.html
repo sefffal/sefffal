@@ -62,10 +62,34 @@
             <li>Specify prior distributions using kernel density estimates (just pass raw samples).</li>
             <li>Freely transform variables to different bases</li>
         </ul>
+        <img src="../images/fit-rv.png" width="350"/>
         <h3><a href="https://sefffal.github.io/PairPlots.jl/">PairPlots</a></h3>
+        <p>
+            PairPlots is a Julia and Python package for generating pair plots, also known as corner plots. Inspired by the very popular Python package <code>corner.py</code>, this package produces highly customizable visualizations to compare high-dimensional data e.g. Markov-chain monte carlo posteriors.
+        </p>
+        <img src="../images/pairplot.png" width="250"/> 
         <h3><a href="https://sefffal.github.io/PlanetOrbits.jl/">PlanetOrbits</a></h3>
+        <p>
+            PlanetOrbits.jl is the calculation backend for Octofitter. It provides an easy interface to a large suite of different orbit calculations, and is fully auto-differentiable.
+        </p>
+        <p>
+            PlanetOrbits.jl supports many different kepler solvers with varying accuracies and number types (e.g. Float-16, Float-32, Float-64, and arbitrary precision). Bound and unbound  (hyperbolic) orbits are supported.
+        </p>
+        <video src="https://sefffal.github.io/PlanetOrbits.jl/dev/assets/51-eri-orbit.mp4" autoplay="" loop="" width="250" height="250"></video>
         <h3><a href="https://sefffal.github.io/AstroImages.jl/">AstroImages</a></h3>
-        <h3>JuliaAstro</h3>
+        <p>
+            AstroImages.jl is a package for loading and displaying FITS files, complete with support for world coordinate systems. It's very simple to use:
+        </p>
+        <pre>
+img = load("myfile.fits",1)
+img["HEADER1"] = 1.0
+img["HEADER1",/] = "comment 1"
+imview(img, stretch=logstretch)
+        </pre>
+        <img src="../images/astroimages.png" width="350" />
+
+        <h3><a href="http://juliaastro.org">JuliaAstro</a></h3>
+        I help maintain some of the Julia Astro packages, and the main documentation and tutorial site: <a href="http://juliaastro.org">http://juliaastro.org</a>.
 
         <p class="octo">🐙</p>
     </div>
