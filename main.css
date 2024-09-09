@@ -53,3 +53,34 @@ canvas {
 .body img {
     max-width: 100%;
 }
+
+
+.link-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.link-grid .research {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border: 1px solid #333;
+}
+
+
+.research img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.research h3 {
+    text-align: center;
+    width: 100%;
+}

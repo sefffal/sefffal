@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>William Thompson</title>
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <link rel="stylesheet" type="text/css" href="../stars.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <div class="header stars-container">
+        <div class="body centre">
+            <h1>William Thompson</h1>
+            <h3>Astronomer</h3>
+            <hr>
+            <a class="bread" href="../index.html">Home</a>
+            <a class="bread" href="">Research</a>
+            <a class="bread" href="../cv.html">CV</a>
+            <a class="bread social" href="http://github.com/sefffal">GitHub</a>
+            <a class="bread social" href="http://x.com/AstroWrt">Twitter</a>
+            <a class="bread social"
+                href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=QPQCOPYAAAAJ&pagesize=100">Google
+                Scholar</a>
+            <a class="bread social" href="https://orcid.org/0000-0001-5684-4593">ORCID</a>
+        </div>
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+    </div>
+    <div class="centre body">
+        <h1>Software</h1>
+
+        <h3><a href="https://sefffal.github.io/Octofitter.jl/">Octofitter</a></h3>
+        <p>
+            Octofitter is a large set of packages I created with the goal of advancing the current state of orbit fitting.
+            Octofitter is built from the ground-up for extremely high performance and differentiable computing. Using Octofitter, challenging orbit models which previously would require hours or days, can now be sampled in seconds or minutes.
+        </p>
+        <p>
+            This speed enables researchers to approach their modelling tasks with a new level of rigour, and following a full Bayesian workflow. One can&mdash;in less than the time it used to take to run a single model&mdash;compare how different individual data points impact a fit, compare how priors affect the results, or even run full suites of simulated fits to anticipate how new data would impact findings.
+        </p>
+        <p>
+            Octofitter supports an even-growing list of kinds of exoplanet data. At present, these include:
+        </p>
+        <ul>
+            <li>Relative astrometry</li>
+            <li>Barycentric radial velocity (e.g. of a star)</li>
+            <li>Barycentric radial velocity (e.g. of a star)</li>
+            <li>Hipparcos-Gaia proper motion anomaly</li>
+            <li>Hipparcos IAD</li>
+            <li>Relative photometry</li>
+            <li>Absolute photometry</li>
+            <li>Direct images</li>
+            <li>Interferometric closure phases and squared visibilities e.g. from sparse aperture masking</li>
+            <li>GRAVITY closure phase data using kernel phase analysis</li>
+            <li>Arbitrary x vs. y likelihood maps e.g. from GRAVITY, spectral cross correlation, etc.</li>
+            <li>Some spectral modelling features, e.g. to support GRAVITY data</li>
+        </ul>
+        In addition, all of the above data can be combined together through a user-specified joint model. These models can freely incorporate the following features:
+        <ul>
+            <li>Tie dynamical masses and photometry together through age &amp; cooling tracks</li>
+            <li>Specify custom priors, including multivariate priors with correlations, etc.</li>
+            <li>Specify prior distributions using kernel density estimates (just pass raw samples).</li>
+            <li>Freely transform variables to different bases</li>
+        </ul>
+        <h3><a href="https://sefffal.github.io/PairPlots.jl/">PairPlots</a></h3>
+        <h3><a href="https://sefffal.github.io/PlanetOrbits.jl/">PlanetOrbits</a></h3>
+        <h3><a href="https://sefffal.github.io/AstroImages.jl/">AstroImages</a></h3>
+        <h3>JuliaAstro</h3>
+
+        <p class="octo">🐙</p>
+    </div>
+</body>
+
+</html>

@@ -24,80 +24,35 @@
             <div id='stars3'></div>
         </div>
         <div class="centre body">
-            <h3>Observational Work</h3>
-            <p>
-                One of my largest observational projects to date has been the Deep orbital Search for Additoinal Planets in the HR8799 system (<a href=""https://iopscience.iop.org/article/10.3847/1538-3881/aca1af">Thompson et al, 2022</a>). The image below combines four quarter-nights of Keck NIRC2 data to display the four known planets in the HR8799 system (<a href="https://www.nature.com/articles/nature09684">Marois et al, 2010</a>).
-            </p>
-            <p>
-                These four planets are the first directly imaged planetary massed objects outside our solar system, and have been extensively studied.
-            </p>
-            <p>
-                My work on this system included observering and gathering 16 nights of NIRC2 observations, developing new ADI post-processing techniques (<a href="https://iopscience.iop.org/article/10.3847/1538-3881/abee7d/pdf">Thompson &amp; Marois, 2021</a>) and developing new orbit modelling techniques to search for faint companions in the presence of orbital motion.
-            </p>
-            <p>
-                This project led to the detection of a candidate fifth inner planet: a possible explanation for proper motion measurements that are in tension with atmosphere models.
-            </p>
-            <img src="../images/hr8799-crop-web.png" width="250" />
-
-            <p>
-                I also used data from this project to create the first 100% uniformly reduced orbital animation of the system, see here:
-            </p>
-
-            <video width="250" height="250" loop="" autoplay="false" muted="" id="hr8799">
-                <source src="../images/orbital-animation.mp4"
-                    type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div style="text-align: center; width: 250px;">
-            <button onclick="document.querySelector('#hr8799').play();">play</button>
-            <button onclick="window.open('../images/orbital-animation.mp4')">Download</button>
+            <h1>Research</h1>
+            <br/>
+            <div class="link-grid">
+                <div class="research">
+                    <a href="observations.html">
+                        <img src="../images/hr8799-orbits.jpg"/>
+                        <h3>Observational work</h3>
+                    </a>
+                </div>
+                <div class="research">
+                    <a href="instrumentation.html">
+                        <img src="../images/spiders.png"/>
+                        <h3>Instrumentation</h3>
+                    </a>
+                </div>
+                <div class="research">
+                    <a href="modelling.html">
+                        <img src="../images/fit-rv.png"/>
+                        <h3>Modelling &amp; Orbits</h3>
+                    </a>
+                </div>
+                <div class="research">
+                    <a href="software.html">
+                        <img src="../images/pairplot.png"/>
+                        <h3>Software</h3>
+                    </a>
+                </div>
             </div>
-            <p>
-            This animation uses a keplerian motion interpolation scheme to smoothly move between images.
-            </p>
-            <p>
-                Currently observational work includes:
-            </p>
-            <ul>
-                <li>Efforts to directly lower mass and cooler companions around nearby stars, both at thermal wavelengths from the ground and from space.</li>
-                <li>Various observational programs with VLTI-GRAVITY</li>
-                <li>Orbits of Moving Group Binaries with Eric Nielsen </li>
-                <li>The Subaru/Keck accelerating stars program with Thayne Currie</li>
-            </p>
-            </ul>
-            <h3>Instrumentation</h3>
-            <p>I am currently involved in three major instrumentation projects, including SPIDERS (the Subaru Pathfinder Instrument for Detecting Exoplanets and Retrieving Spectra), the Gemini Planet Imager 2.0 / CAL2 upgrade, and NRC's optical aperture synthesis project.</p>
-            <h4>Focal Plane Wavefront Sensing</h4>
-            <p>Focal plane wavefront sensing refers to any technique that measures the electric field of light at the science focal plane. This kind of approach is critically important for the next generation of direct imaging instruments, because it allows us to measure and suppress stellar glare, also known as "speckles".
-            </p>
-            <p>
-                In SPIDERS, we will demonstrate the Fast Atmospheric Self-Coherent Camera Technique (<a href="https://nrc-publications.canada.ca/eng/view/object/?id=020d97bf-a86d-4499-b6d2-dd28999c204a">Gerard et al 2019</a>). 
-                With the FAST SCC, we turn the science camera into a interferometer.
-                Instead of blocking starlight using a coronagraph, we redict it, filter it, and interfer it back with itself.
-            </p>
-            <p>
-                The upshot is that our science images become fringed anywhere light leaks past the coronagraph. Planets and disks, being incoherent with the star, remain unfringed, allowing us to instantly discriminate between planet light and starlight.
-            </p>
-            <p>
-                Using a deformable mirror and techniques from adaptive optics, we can use this information to perform an active correction and create a region around the star where the starlight has been dramatically suppressed&mdash;a.k.a. "digging a dark hole":
-            </p>
-            <img src="../images/square-dark-hole.png" width="250"/>
-            <h4>Coherent Differential Imaging</h4>
-            <p>
-                In addition to active correction, we can use the self-coherent camera to post-process our data and reveal even fainter planets. This software step can be combined with the hardware loop described above to further suppress stubborn speckles.
-            </p>
-            <img src="../images/cdi.png" width="500"/>
-            <h4>Fourier Transform Spectroscopy</h4>
-            <p>
-                Using spectral information to help discriminate planet light from starlight has a long history. Unfortunately, it has often not lived up to its expectations. Real data from instruments like GPI, SPHERE, and SCExAO reveals that low-resolution integral field units give datacubes with speckles that evolve considerably with wavelength.
-            </p>
-            <p>
-                To better understand chromaticity in high contrast instruments, to try and improve on current performance, and to combine spectroscopy with self-coherent camera, I proposed and helped to build an Imaging Fourier Transform Spectrograph (IFTS) for the SPIDERS instrument. 
-            </p>
-            <p>The SPIDERS IFTS will be capable of imaging exoplanets with a spectral resolution of over R15,000. Preliminary results show a factor of 40-50 starlight suppression may be possible using spectral differential imaging with this instrument. A collapsed cube is visible in the image below:</p>
-            <img src="../images/spiders-ifts-rgb1.png" width="250">
-            <h4>Optical Apperture Synthesis</h4>
-
+<!--            
             <h3>Modelling</h3>
             <p>
                 A major focus of my research is detecting planets by combining orbit modelling with models of raw data.
@@ -113,15 +68,7 @@
             <h4>Orbit Modelling</h4>
             <h4>Direct Image Modelling / "De-orbitting"</h4>
             <h4>Interferometry</h4>
-            <h4>Proper Motion / Absolute Astrometry</h4>
-
-
-            <h3>Software</h3>
-            <h4>Octofitter.jl</h4>
-            <h4>PlanetOrbits.jl</h4>
-            <h4>PairPlots.jl</h4>
-            <h4>JuliaAstro</h4>
-            <h4>AstroImages.jl</h4>
+            <h4>Proper Motion / Absolute Astrometry</h4>-->
             <p class="octo">🐙</p>
         </div>
     </body>
